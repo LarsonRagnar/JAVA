@@ -26,6 +26,13 @@ public class Main {
 
     }
 
+    /**
+     * @apiNote Метод принимает римские цифры и возвращает арабские
+     * @param num
+     * @param str
+     * @param str1
+     * @return Число арабскими цифрами
+     */
     private static int getSum1(Map<Character, Integer> num, String str, String str1) {
         int sum1= num.get(str1.charAt(str.length()-1));
         for (int j = 0; j < str1.length() -1; j++) {
