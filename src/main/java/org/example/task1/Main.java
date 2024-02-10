@@ -9,12 +9,8 @@ public class Main {
         String str=scanner.nextLine();
         for (int i = 0; i < str.length(); i++) {
             Character ch = str.charAt(i);
-            if (!map.containsKey(ch)){
-                map.put(ch,1);
-            }else {
-                map.put(ch,map.get(ch) + 1);
-            }
-
+            map.putIfAbsent(ch,1);
+            map.put(ch,map.get(ch)+1);
         }
         for (Map.Entry<Character, Integer> characterIntegerEntry : map.entrySet()) {
             System.out.println(characterIntegerEntry.getKey()+ ':'+ characterIntegerEntry.getValue());

@@ -28,7 +28,7 @@ public class Main {
 
     /**
      * @apiNote Метод принимает римские цифры и возвращает арабские
-     * @param num
+     * @param num tanslate map
      * @param str
      * @param str1
      * @return Число арабскими цифрами
